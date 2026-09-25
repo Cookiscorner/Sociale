@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CookisCorner</title>
+    <meta
+      name="description"
+      content="CookisCorner — oficjalne linki do Twitch, Kick, YouTube, TikTok i Discord."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                purple: '#9146FF',
+                green: '#53FC18',
+                red: '#FF0000',
+                cyan: '#00F2FE',
+                dark: '#08070d',
+                card: '#120f1d',
+                border: '#28213f'
+              }
+            },
+            boxShadow: {
+              neon: '0 0 30px rgba(145,70,255,0.5)'
+            }
+          }
+        }
+      };
+    </script>
+    <style>
+      body {
+        font-family: Inter, sans-serif;
+        background: radial-gradient(circle at top, rgba(145, 70, 255, 0.22), rgba(8, 7, 13, 1) 55%);
+      }
+      .glow {
+        box-shadow: 0 0 30px rgba(145, 70, 255, 0.25);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-[#06050a] text-white">
+    <header class="sticky top-0 z-20 border-b border-white/10 bg-black/70 backdrop-blur-md">
+      <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-4">
+        <div class="flex items-center gap-3">
+          <div class="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-tr from-brand-purple via-brand-cyan to-brand-green text-2xl shadow-neon">
+            🍪
+          </div>
+          <div>
+            <div class="text-xs uppercase tracking-[0.25em] text-gray-400">Official</div>
+            <div class="text-xl font-black uppercase tracking-wide">
+              COOKIS<span class="text-brand-purple">CORNER</span>
+            </div>
+          </div>
+        </div>
+        <span class="rounded-full border border-brand-purple/60 bg-brand-purple/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-purple-200">
+          Stream Hub
+        </span>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-5xl px-4 py-8">
+      <section class="glow mb-8 overflow-hidden rounded-3xl border border-brand-purple/50 bg-brand-card">
+        <div class="grid gap-6 p-6 md:grid-cols-[1.2fr_0.8fr] md:p-10">
+          <div>
+            <div class="mb-4 inline-flex rounded-full border border-brand-purple/40 bg-brand-purple/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-purple-200">
+              Live & Community
+            </div>
+            <h1 class="mb-4 text-4xl font-black leading-tight md:text-6xl">
+              Wybierz platformę i
+              <span class="bg-gradient-to-r from-brand-purple via-brand-cyan to-brand-green bg-clip-text text-transparent">
+                dołącz do streamu
+              </span>
+            </h1>
+            <p class="max-w-xl text-sm text-gray-300 md:text-base">
+              Kliknij poniżej, aby przejść do oficjalnych transmisji, społeczności i najnowszych treści CookisCorner.
+            </p>
+          </div>
+
+          <div class="flex items-center justify-center">
+            <div class="w-full max-w-sm rounded-3xl border border-white/10 bg-black/30 p-5">
+              <div class="mb-3 flex items-center gap-2">
+                <span class="h-3 w-3 rounded-full bg-brand-green"></span>
+                <span class="h-3 w-3 rounded-full bg-brand-red"></span>
+                <span class="h-3 w-3 rounded-full bg-brand-cyan"></span>
+              </div>
+              <div class="space-y-3 text-sm text-gray-300">
+                <div class="rounded-xl border border-brand-purple/40 bg-brand-purple/10 p-3">Twitch — główne transmisje na żywo</div>
+                <div class="rounded-xl border border-brand-green/40 bg-brand-green/10 p-3">Kick — streamy i wyzwania</div>
+                <div class="rounded-xl border border-brand-red/40 bg-brand-red/10 p-3">YouTube — shorts i powtórki</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+        <a href="https://www.twitch.tv/cookiscorner" target="_blank" rel="noopener noreferrer" class="group rounded-2xl border border-[#9146FF]/50 bg-[#120f1d] p-4 transition hover:-translate-y-1 hover:border-[#9146FF] hover:shadow-[0_0_25px_rgba(145,70,255,0.25)]">
+          <div class="mb-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#9146FF]/20 text-2xl text-[#9146FF]"><i class="fa-brands fa-twitch"></i></div>
+              <div>
+                <div class="text-lg font-bold text-white">Twitch</div>
+                <div class="text-xs text-gray-400">Na żywo</div>
+              </div>
+            </div>
+            <span class="rounded bg-[#9146FF]/20 px-2 py-1 text-[10px] font-black uppercase tracking-[0.2em] text-[#9146FF]">Live</span>
+          </div>
+          <p class="text-sm text-gray-300">Główne transmisje i interakcja na żywo z widzami.</p>
+        </a>
+
+        <a href="https://kick.com/cookiscorner" target="_blank" rel="noopener noreferrer" class="group rounded-2xl border border-[#53FC18]/50 bg-[#120f1d] p-4 transition hover:-translate-y-1 hover:border-[#53FC18] hover:shadow-[0_0_25px_rgba(83,252,24,0.2)]">
+          <div class="mb-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#53FC18]/20 text-2xl text-[#53FC18]"><i class="fa-solid fa-bolt"></i></div>
+              <div>
+                <div class="text-lg font-bold text-white">Kick</div>
+                <div class="text-xs text-gray-400">Streamy</div>
+              </div>
+            </div>
+            <span class="rounded bg-[#53FC18]/20 px-2 py-1 text-[10px] font-black uppercase tracking-[0.2em] text-[#53FC18]">Stream</span>
+          </div>
+          <p class="text-sm text-gray-300">Transmisje i wyzwania na żywo z energią i akcji.</p>
+        </a>
+
+        <a href="https://www.youtube.com/@Cookiscorner" target="_blank" rel="noopener noreferrer" class="group rounded-2xl border border-[#FF0000]/50 bg-[#120f1d] p-4 transition hover:-translate-y-1 hover:border-[#FF0000] hover:shadow-[0_0_25px_rgba(255,0,0,0.2)]">
+          <div class="mb-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#FF0000]/20 text-2xl text-[#FF0000]"><i class="fa-brands fa-youtube"></i></div>
+              <div>
+                <div class="text-lg font-bold text-white">YouTube</div>
+                <div class="text-xs text-gray-400">Video</div>
+              </div>
+            </div>
+            <span class="rounded bg-[#FF0000]/20 px-2 py-1 text-[10px] font-black uppercase tracking-[0.2em] text-[#FF0000]">VOD</span>
+          </div>
+          <p class="text-sm text-gray-300">Filmy, powtórki i krótkie materiały video.</p>
+        </a>
+
+        <a href="https://www.tiktok.com/@cookiscorner" target="_blank" rel="noopener noreferrer" class="group rounded-2xl border border-[#00F2FE]/50 bg-[#120f1d] p-4 transition hover:-translate-y-1 hover:border-[#00F2FE] hover:shadow-[0_0_25px_rgba(0,242,254,0.2)]">
+          <div class="mb-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#00F2FE]/20 text-2xl text-[#00F2FE]"><i class="fa-brands fa-tiktok"></i></div>
+              <div>
+                <div class="text-lg font-bold text-white">TikTok</div>
+                <div class="text-xs text-gray-400">Klipy</div>
+              </div>
+            </div>
+            <span class="rounded bg-[#00F2FE]/20 px-2 py-1 text-[10px] font-black uppercase tracking-[0.2em] text-[#00F2FE]">Clips</span>
+          </div>
+          <p class="text-sm text-gray-300">Najlepsze krótkie klipy i momenty z contentu.</p>
+        </a>
+
+        <a href="https://discord.gg/aFmxEStYm" target="_blank" rel="noopener noreferrer" class="group rounded-2xl border border-[#5865F2]/50 bg-[#120f1d] p-4 transition hover:-translate-y-1 hover:border-[#5865F2] hover:shadow-[0_0_25px_rgba(88,101,242,0.2)] md:col-span-2 xl:col-span-1">
+          <div class="mb-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#5865F2]/20 text-2xl text-[#5865F2]"><i class="fa-brands fa-discord"></i></div>
+              <div>
+                <div class="text-lg font-bold text-white">Discord</div>
+                <div class="text-xs text-gray-400">Społeczność</div>
+              </div>
+            </div>
+            <span class="rounded bg-[#5865F2]/20 px-2 py-1 text-[10px] font-black uppercase tracking-[0.2em] text-[#5865F2]">Community</span>
+          </div>
+          <p class="text-sm text-gray-300">Dołącz do społeczności, rozmawiaj i śledź powiadomienia.</p>
+        </a>
+      </section>
+
+      <section class="mt-8 rounded-2xl border border-brand-purple/40 bg-gradient-to-r from-brand-purple/10 via-[#120f1d] to-[#120f1d] p-5 md:flex md:items-center md:justify-between">
+        <div>
+          <h2 class="mb-1 text-xl font-black uppercase text-white">Współpraca i biznes</h2>
+          <p class="text-sm text-gray-400">Masz propozycję współpracy lub sponsoringu? Skontaktuj się przez e-mail.</p>
+        </div>
+        <a href="mailto:kontakt.cookiscorner@gmail.com" class="mt-4 inline-flex rounded-xl bg-brand-purple px-5 py-3 font-bold text-white transition hover:bg-purple-600 md:mt-0">
+          kontakt.cookiscorner@gmail.com
+        </a>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10 py-6 text-center text-xs text-gray-500">
+      © <span id="year"></span> COOKISCORNER. Wszystkie prawa zastrzeżone.
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
